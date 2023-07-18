@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="main-header" >
+         <div class="top-bar">
+         <ul class="header-social">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <div class="dropdown" >
+               <button class="dropbtn" id="header-drop">Language <i class="fa-solid fa-caret-down"></i></button>
+               <div class="dropdown-content">
+                  <a href="#">English</a>
+                  <a href="#">Arabic</a>
+                  <a href="#">German</a>
+                  <a href="#">Greek</a>
+                  <a href="#">Spanish</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <button class="dropbtn"  id="header-drop">Currency <i class="fa-solid fa-caret-down"></i></button>
+               <div class="dropdown-content">
+                  <a href="#">USD</a>
+                  <a href="#">EUR</a>
+                  <a href="#">INR</a>
+                  <a href="#">GBP</a>
+               </div>
+            </div>
+            <span  id="menu-0"><i class="fa-solid fa-user"></i><span style="padding-left: 10px;">Register</span></span>
+            <span id="menu2" style="padding-left: 20px;"><i class="fa-solid fa-right-to-bracket"></i> <span style="padding-left: 10px;">Login</span>
+            <div class="dropdown" id="menu">
+               <button class="dropbtn"> <i class="fa-solid fa-house-user"></i><span>My Dashboard <i class="fa-solid fa-caret-down"></i></span></button>
+               <div class="dropdown-content">
+                  <a href="#"><i class="fa-regular fa-user"></i><span>My Profile</span> </a>
+                  <a href="#"><i class="fa-brands fa-intercom"></i><span>Courses</span> </a>
+                  <a href="#"><i class="fa-regular fa-bell"></i><span>Notifications</span> </a>
+                  <a href="#"><i class="fa-solid fa-gear"></i><span>Account</span> </a>
+                  <a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span> </a>
+               </div>
+            </div>
+         </ul>
+         </div>
+         
+         <div class="main-div">
+            <div class="log">
+               <img src="images/Bilalex1 (92).png" alt="">
+            </div>
+            <div class="div-icon">
+               <i class="fa-solid fa-gear" id="user"></i>
+               <i class="fa-solid fa-user" id="user"></i>
+               <i class="fa-solid fa-cart-shopping" id="user"></i>
+            </div>
+         </div>
+         <nav>
+            <div class="wrapper-header">
+               <input type="radio" name="slider" id="menu-btn">
+               <input type="radio" name="slider" id="close-btn">
+               <ul class="nav-links">
+                  <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Widgets</a></li>
+                  <li>
+                     <a href="#" class="desktop-item">Pages <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                     <input type="checkbox" id="showDrop">
+                     <label for="showDrop" class="mobile-item">Pages</label>
+                     <ul class="drop-menu">
+                        <li><a href="#">Home Default</a></li>
+                        <li><a href="#">Home Text</a></li>
+                        <li><a href="#">Home Slider</a></li>
+                        <li><a href="#">Home Video</a></li>
+                        <li><a href="#">Home Animation</a></li>
+                        <li><a href="#">Home Map</a></li>
+                        <li><a href="#">Home Intro Page</a></li>
+                        <li><a href="#" style="color: #ffffff;background-color:#EC296B;">Home Pop-up login</a></li>
+                        <li><a href="#">Home Banner</a></li>
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="#" class="desktop-item">Blog <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                     <input type="checkbox" id="showMega">
+                     <label for="showMega" class="mobile-item">Blog </label>
+                     <div class="mega-box">
+                        <div class="content">
+                           <div class="row">
+                              <header>Design Services</header>
+                              <ul class="mega-links">
+                                 <li><a href="#">Graphics</a></li>
+                                 <li><a href="#">Vectors</a></li>
+                                 <li><a href="#">Business cards</a></li>
+                                 <li><a href="#">Custom logo</a></li>
+                                 <li><a href="#">Web Design</a></li>
+                                 <li><a href="#">Basefont Logo</a></li>
+                              </ul>
+                           </div>
+                           <div class="row">
+                              <header>Email Services</header>
+                              <ul class="mega-links">
+                                 <li><a href="#">Personal Email</a></li>
+                                 <li><a href="#">Business Email</a></li>
+                                 <li><a href="#">Mobile Email</a></li>
+                                 <li><a href="#">Web Marketing</a></li>
+                                 <li><a href="#">Frontend</a></li>
+                                 <li><a href="#">Backend</a></li>
+                              </ul>
+                           </div>
+                           <div class="row">
+                              <header>Security services</header>
+                              <ul class="mega-links">
+                                 <li><a href="#">Site Seal</a></li>
+                                 <li><a href="#">VPS Hosting</a></li>
+                                 <li><a href="#">Privacy Seal</a></li>
+                                 <li><a href="#">Website design</a></li>
+                                 <li><a href="#"> Crouse</a></li>
+                              </ul>
+                           </div>
+                           <div class="row">
+                              <header>User Pages</header>
+                              <ul class="mega-links">
+                                 <li><a href="#">User Profile</a></li>
+                                 <li><a href="#">Crouse Listing</a></li>
+                                 <li><a href="#">Sale Listing</a></li>
+                                 <li><a href="#">Product Listing</a></li>
+                                 <li><a href="#">Next Program</a></li>
+                                 <li><a href="#">Program</a></li>
+                              </ul>
+                           </div>
+                           <div class="row">
+                              <header>Header and Footer</header>
+                              <ul class="mega-links">
+                                 <li><a href="#">Program Style</a></li>
+                                 <li><a href="#">Program Style</a></li>
+                                 <li><a href="#">Program Style</a></li>
+                                 <li><a href="#">Program Style</a></li>
+                                 <li><a href="#">Program Style</a></li>
+                                 <li><a href="#">Program Style</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li><a href="#">Custom Pages</a></li>
+                  <li><a href="#">Contact Us</a></li>
+               </ul>
+               <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+            </div>
+         </nav>
+         <div class="content">
+            <h1 class="mb-1">Find The Best Trainres and Build Your Future</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable.</p>
+         </div>
+         <div class="form">
+            <input type="text" placeholder="Search Courses...." autocomplete="off">
+            <input type="text" placeholder="Enter Location" autocomplete="off">
+            <i class="fa-solid fa-location-dot" style="color: #6987ab; border-right: 1px solid #6767681e;padding: 13px 30px 13px 0px;font-size: 13px;"></i>
+            <input type="text" placeholder="Select" autocomplete="off">
+            <div class="btn-search-header">
+               <button>Search Area</button>
+            </div>
+         </div>
+      </div>
+      <!-- // Body seaction -->
+      <div class="section-two">
+         <div class="section-title center-block text-center">
+            <h2>Categories</h2>
+            <span class="sectiontitle-design">
+               <hr size="4" width="90px" align="center" color="red"  style="margin-left: auto;margin-right: auto; margin-top: 20px;" style="color: red;" >
+               <span class="icons"></span>
+            </span>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="container-emmet">
+            <div class="wrapper" style="padding-bottom: 40px;">
+               <i id="left" class="fa-solid fa-angle-left"></i>
+               <ul class="carousel">
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (93).png" alt="img" draggable="false"></div>
+                     <h2>Life Style</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">45</small>
+                  </li>
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (94).png" alt="img" draggable="false"></div>
+                     <h2>Photoshop</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">46</small>
+                  </li>
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (95).png" alt="img" draggable="false"></div>
+                     <h2>Business</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">47</small>
+                  </li>
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (96).png" alt="img" draggable="false"></div>
+                     <h2>Construction</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">48</small>
+                  </li>
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (97).png" alt="img" draggable="false"></div>
+                     <h2>Computer</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">49</small>
+                  </li>
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (98).png" alt="img" draggable="false"></div>
+                     <h2>Data Science</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">50</small>
+                  </li>
+                  <li class="card">
+                     <div class="img"><img src="images/Bilalex1 (99).png" alt="img" draggable="false">
+                     </div>
+                     <h2>Health</h2>
+                     <small class="badge rounded-pill badge-primary mt-2">51</small>
+                  </li>
+               </ul>
+               <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+         </div>
+      </div>
+      <!-- //Two Card Detaills -->
+      <div class="section-two" style="background-color: #ffffff;">
+         <div class="section-title center-block text-center">
+            <h2>Latest Classes</h2>
+            <span class="sectiontitle-design">
+               <HR size="4" width="90px" align="center" color="black"  style="margin-left: auto;
+                  margin-right: auto; margin-top: 20px;" >
+               <span class="icons"></span>
+            </span>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="main-content" style="background-color: #ffffff;">
+            <div class="container swiper">
+               <div class="slide-container">
+                  <div class="card-wrapper swiper-wrapper">
+                     <div class="card swiper-slide">
+                        <div class="image-box">
+                           <div class="container-overlay-images">
+                              <img src="images/Bilalex1 (34).jpg" alt="" />
+                           </div>
+                           <div class="ovelay-container"></div>
+                           <div class="rating">
+                              <span>5.0</span>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </div>
+                           <div class="power-ribbon power-ribbon-top-left text-warning">
+                              <span class="bg-warning"><i class="fa fa-bolt"></i></span>
+                           </div>
+                           <div class="item-tag">
+                              <h4 class="mb-0">$467.00</h4>
+                           </div>
+                           <div class="item-card2-icons"> 
+                              <a href="#" class="item-card2-icons-l"> 
+                              <i class="fa fa-share-alt"></i>
+                              </a> 
+                              <a href="page-details.html" class="item-card2-icons-l "> 
+                              <i class="fa-solid fa-heart"></i>
+                              </a> 
+                           </div>
+                        </div>
+                        <div class="profile-details">
+                           <div class="name-job">
+                              <h3 class="name">3D Animation Trainig</h3>
+                              <p class="">At vero eos et accusamus et iusto odio dignissimos ducimus </p>
+                           </div>
+                           <ul class="mb-0">
+                              <div class="center-linker">
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-location-dot"></i> Los Angles
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a>
+                                 </li>
+                              </div>
+                              <div class="center-linker">
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-user"></i> Sally Peake
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-phone"></i> 567987087
+                                    </a>
+                                 </li>
+                              </div>
+                           </ul>
+                           <div class="calander-div">
+                              <a class="btn btn-outline-light">
+                              <span class="font-weight-bold">
+                              <i class="fa fa-calendar"></i> :
+                              </span> 9 Months
+                              </a>
+                              <a class="btn btn-primary text-white float-end">
+                              <span class="font-weight-bold">
+                              <i class="fa-solid fa-clock"></i> :
+                              </span> 1 Hour
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card swiper-slide">
+                        <div class="image-box">
+                           <div class="container-overlay-images">
+                              <img src="images/Bilalex1 (35).jpg" alt="" />
+                           </div>
+                           <div class="ovelay-container"></div>
+                           <div class="rating">
+                              <span>5.0</span>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </div>
+                           <div class="power-ribbon power-ribbon-top-left text-warning">
+                              <span class="bg-warning"><i class="fa fa-bolt"></i></span>
+                           </div>
+                           <div class="item-tag">
+                              <h4 class="mb-0">$367.00</h4>
+                           </div>
+                           <div class="item-card2-icons"> 
+                              <a href="#" class="item-card2-icons-l"> 
+                              <i class="fa fa-share-alt"></i>
+                              </a> 
+                              <a href="page-details.html" class="item-card2-icons-l "> 
+                              <i class="fa-solid fa-heart"></i>
+                              </a> 
+                           </div>
+                        </div>
+                        <div class="profile-details">
+                           <div class="name-job">
+                              <h3 class="name">Coding Classes</h3>
+                              <p class="">At vero eos et accusamus et iusto odio dignissimos </p>
+                           </div>
+                           <ul class="mb-0">
+                              <div class="center-linker">
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-location-dot"></i> Los Angles
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="icons">
+                                       <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a
+                                 </li>
+                              </div>
+                              <div class="center-linker">
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-user"></i> Sally Peake
+                              </a>
+                              </li>
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-phone"></i> 567987087
+                              </a>
+                              </li>
+                              </div>
+                           </ul>
+                           <div class="calander-div">
+                              <a class="btn btn-outline-light">
+                              <span class="font-weight-bold">
+                              <i class="fa fa-calendar"></i> :
+                              </span> 9 Months
+                              </a>
+                              <a class="btn btn-primary text-white float-end">
+                              <span class="font-weight-bold">
+                              <i class="fa-solid fa-clock"></i> :
+                              </span> 1 Hour
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card swiper-slide">
+                        <div class="image-box">
+                           <div class="container-overlay-images">
+                              <img src="images/Bilalex1 (35).jpg" alt="" />
+                           </div>
+                           <div class="ovelay-container"></div>
+                           <div class="rating">
+                              <span>5.0</span>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </div>
+                           <div class="power-ribbon power-ribbon-top-left text-warning">
+                              <span class="bg-warning"><i class="fa fa-bolt"></i></span>
+                           </div>
+                           <div class="item-tag">
+                              <h4 class="mb-0">$567.00</h4>
+                           </div>
+                           <div class="item-card2-icons"> 
+                              <a href="#" class="item-card2-icons-l"> 
+                              <i class="fa fa-share-alt"></i>
+                              </a> 
+                              <a href="page-details.html" class="item-card2-icons-l "> 
+                              <i class="fa-solid fa-heart"></i>
+                              </a> 
+                           </div>
+                        </div>
+                        <div class="profile-details">
+                           <div class="name-job">
+                              <h3 class="name">3D Animation Trainig</h3>
+                              <p class="">At vero eos et accusamus et iusto odio dignissimos </p>
+                           </div>
+                           <ul class="mb-0">
+                              <div class="center-linker">
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-location-dot"></i> Los Angles
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="icons">
+                                       <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a
+                                 </li>
+                              </div>
+                              <div class="center-linker">
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-user"></i> Sally Peake
+                              </a>
+                              </li>
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-phone"></i> 567987087
+                              </a>
+                              </li>
+                              </div>
+                           </ul>
+                           <div class="calander-div">
+                              <a class="btn btn-outline-light">
+                              <span class="font-weight-bold">
+                              <i class="fa fa-calendar"></i> :
+                              </span> 9 Months
+                              </a>
+                              <a class="btn btn-primary text-white float-end">
+                              <span class="font-weight-bold">
+                              <i class="fa-solid fa-clock"></i> :
+                              </span> 1 Hour
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card swiper-slide">
+                        <div class="image-box">
+                           <div class="container-overlay-images">
+                              <img src="images/Bilalex1 (38).jpg" alt="" />
+                           </div>
+                           <div class="ovelay-container"></div>
+                           <div class="rating">
+                              <span>5.0</span>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </div>
+                           <div class="power-ribbon power-ribbon-top-left text-warning">
+                              <span class="bg-warning"><i class="fa fa-bolt"></i></span>
+                           </div>
+                           <div class="item-tag">
+                              <h4 class="mb-0">$667.00</h4>
+                           </div>
+                           <div class="item-card2-icons"> 
+                              <a href="#" class="item-card2-icons-l"> 
+                              <i class="fa fa-share-alt"></i>
+                              </a> 
+                              <a href="page-details.html" class="item-card2-icons-l "> 
+                              <i class="fa-solid fa-heart"></i>
+                              </a> 
+                           </div>
+                        </div>
+                        <div class="profile-details">
+                           <div class="name-job">
+                              <h3 class="name">Digital Marketing</h3>
+                              <p class="">At vero eos et accusamus et iusto odio dignissimos </p>
+                           </div>
+                           <ul class="mb-0">
+                              <div class="center-linker">
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-location-dot"></i> Los Angles
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="icons">
+                                       <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a
+                                 </li>
+                              </div>
+                              <div class="center-linker">
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-user"></i> Sally Peake
+                              </a>
+                              </li>
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-phone"></i> 567987087
+                              </a>
+                              </li>
+                              </div>
+                           </ul>
+                           <div class="calander-div">
+                              <a class="btn btn-outline-light">
+                              <span class="font-weight-bold">
+                              <i class="fa fa-calendar"></i> :
+                              </span> 9 Months
+                              </a>
+                              <a class="btn btn-primary text-white float-end">
+                              <span class="font-weight-bold">
+                              <i class="fa-solid fa-clock"></i> :
+                              </span> 1 Hour
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="card swiper-slide">
+                        <div class="image-box">
+                           <div class="container-overlay-images">
+                              <img src="images/Bilalex1 (37).jpg" alt="" />
+                           </div>
+                           <div class="ovelay-container"></div>
+                           <div class="rating">
+                              <span>5.0</span>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                           </div>
+                           <div class="item-tag">
+                              <h4 class="mb-0">$167.00</h4>
+                           </div>
+                           <div class="item-card2-icons"> 
+                              <a href="#" class="item-card2-icons-l"> 
+                              <i class="fa fa-share-alt"></i>
+                              </a> 
+                              <a href="page-details.html" class="item-card2-icons-l "> 
+                              <i class="fa-solid fa-heart"></i>
+                              </a> 
+                           </div>
+                        </div>
+                        <div class="profile-details">
+                           <div class="name-job">
+                              <h3 class="name">Guitar Classes For Home</h3>
+                              <p class="">At vero eos et accusamus et iusto odio dignissimos </p>
+                           </div>
+                           <ul class="mb-0">
+                              <div class="center-linker">
+                                 <li>
+                                    <a href="#" class="icons">
+                                    <i class="fa-solid fa-location-dot"></i> Los Angles
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="#" class="icons">
+                                       <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a
+                                 </li>
+                              </div>
+                              <div class="center-linker">
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-user"></i> Sally Peake
+                              </a>
+                              </li>
+                              <li>
+                              <a href="#" class="icons">
+                              <i class="fa-solid fa-phone"></i> 567987087
+                              </a>
+                              </li>
+                              </div>
+                           </ul>
+                           <div class="calander-div">
+                              <a class="btn btn-outline-light">
+                              <span class="font-weight-bold">
+                              <i class="fa fa-calendar"></i> :
+                              </span> 9 Months
+                              </a>
+                              <a class="btn btn-primary text-white float-end">
+                              <span class="font-weight-bold">
+                              <i class="fa-solid fa-clock"></i> :
+                              </span> 1 Hour
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-button-next swiper-navBtn"></div>
+                  <div class="swiper-button-prev swiper-navBtn"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--third card slider-->
+      <!-- //Two Card Detaills -->
+      <div class="section-two">
+      <div class="section-title center-block text-center">
+         <h2>Featured Classes</h2>
+         <span class="sectiontitle-design">
+            <HR size="4" width="90px" align="center" color="black"  style="margin-left: auto;
+               margin-right: auto; margin-top: 20px;" >
+            <span class="icons"></span>
+         </span>
+         <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <div class="slider-wrapper">
+         <div class="card swiper-slide-responsive">
+            <div class="image-box-1">
+               <div class="img-overlay-slider">
+                  <img src="images/Bilalex1 (38).jpg" alt="" />
+               </div>
+               <div class="overlay-effect-slider"></div>
+               <div class="power-ribbon power-ribbon-top-left text-warning">
+               </div>
+               <div class="item-tag">
+                  <h4 class="mb-0">$467.00</h4>
+               </div>
+               <div class="item-icon"> 
+                  <a href="#" class="item-card2-icons-l"> 
+                  <i class="fa fa-share-alt"></i>
+                  </a> 
+                  <a href="page-details.html" class="item-card2-icons-l "> 
+                  <i class="fa-solid fa-heart"></i>
+                  </a> 
+               </div>
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                  <h3 class="name">Scripting Classes</h3>
+               </div>
+               <ul class="mb-0" id="demo">
+                  <div class="center-linker">
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-regular fa-eye"></i> 12 Views
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a>
+                     </li>
+                  </div>
+                  <div class="center-linker">
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-solid fa-location-dot"></i> UK
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-solid fa-phone"></i> 567987087
+                        </a>
+                     </li>
+                  </div>
+               </ul>
+               <p class="demo">At vero eos et accusamus et iusto odio dignissimos ducimus </p>
+               <div class="calander-diving">
+                  <span class="font-weight-bold" style="margin-right: 20px;">Duration :</span> 
+                  <span style="position: relative;right: 22px; font-size: 15px;">6 Months</span> 
+                  <span class="font-weight-bold">Daily :</span> <span style="position: relative;right: 3px;font-size: 15px;">2 Hours</span> 
+               </div>
+               <div class="btn-slider-btn">
+                  <button>Join Now</button> 
+               </div>
+            </div>
+         </div>
+         <div class="card swiper-slide-responsive">
+            <div class="image-box-1" id="images">
+               <div class="img-overlay-slider">
+                  <img src="images/Bilalex1 (34).jpg" alt="" />
+               </div>
+               <div class="overlay-effect-slider"></div>
+               <div class="power-ribbon power-ribbon-top-left text-warning">
+               </div>
+               <div class="item-tag">
+                  <h4 class="mb-0">$467.00</h4>
+               </div>
+               <div class="item-icon"> 
+                  <a href="#" class="item-card2-icons-l"> 
+                  <i class="fa fa-share-alt"></i>
+                  </a> 
+                  <a href="page-details.html" class="item-card2-icons-l "> 
+                  <i class="fa-solid fa-heart"></i>
+                  </a> 
+               </div>
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                  <h3 class="name">Data Science Classes</h3>
+               </div>
+               <ul class="mb-0" id="demo">
+                  <div class="center-linker">
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-regular fa-eye"></i> 12 Views
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a>
+                     </li>
+                  </div>
+                  <div class="center-linker">
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-solid fa-location-dot"></i> UK
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-solid fa-phone"></i> 567987087
+                        </a>
+                     </li>
+                  </div>
+               </ul>
+               <p class="demo">At vero eos et accusamus et iusto odio dignissimos ducimus </p>
+               <div class="calander-diving">
+                  <span class="font-weight-bold" style="margin-right: 20px;">Duration :</span> 
+                  <span style="position: relative;right: 22px;font-size: 15px;">6 Months</span> 
+                  <span class="font-weight-bold">Daily :</span> <span style="position: relative;right: 3px;font-size: 15px;">2 Hours</span> 
+               </div>
+               <div class="btn-slider-btn">
+                  <button>Join Now</button> 
+               </div>
+            </div>
+         </div>
+         <div class="card swiper-slide-responsive">
+            <div class="image-box-1" id="images">
+               <div class="img-overlay-slider">
+                  <img src="images/Bilalex1 (41).jpg" alt="" />
+               </div>
+               <div class="overlay-effect-slider"></div>
+               <div class="power-ribbon power-ribbon-top-left text-warning">
+               </div>
+               <div class="item-tag">
+                  <h4 class="mb-0">$467.00</h4>
+               </div>
+               <div class="item-icon"> 
+                  <a href="#" class="item-card2-icons-l"> 
+                  <i class="fa fa-share-alt"></i>
+                  </a> 
+                  <a href="page-details.html" class="item-card2-icons-l "> 
+                  <i class="fa-solid fa-heart"></i>
+                  </a> 
+               </div>
+            </div>
+            <div class="profile-details">
+               <div class="name-job">
+                  <h3 class="name">Guitar Training Classes</h3>
+               </div>
+               <ul class="mb-0" id="demo">
+                  <div class="center-linker">
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-regular fa-eye"></i> 12 Views
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-regular fa-calendar"></i></i> 5 hours ago</a>
+                     </li>
+                  </div>
+                  <div class="center-linker">
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-solid fa-location-dot"></i> UK
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" class="icons">
+                        <i class="fa-solid fa-phone"></i> 567987087
+                        </a>
+                     </li>
+                  </div>
+               </ul>
+               <p class="demo">At vero eos et accusamus et iusto odio dignissimos ducimus </p>
+               <div class="calander-diving">
+                  <span class="font-weight-bold" style="margin-right: 20px;">
+                  Duration :</span> 
+                  <span style="position: relative;right: 22px;font-size: 15px;">6 Months</span> 
+                  <span class="font-weight-bold">Daily :</span> <span style="position: relative;right: 3px;font-size: 15px;">2 Hours</span> 
+               </div>
+               <div class="btn-slider-btn">
+                  <button>Join Now</button> 
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Slider counter-->
+      <div class="Slider-counter">
+         <div class="sm-Slider-counter">
+         <div class="counter-icon">
+            <i class="fa-solid fa-users"></i>
+            <h5>Total Learners</h5>
+            <h2>2569</h2>
+         </div>
+         <div class="counter-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h5>Total Graduates</h5>
+            <h2>1765</h2>
+         </div>
+         <div class="counter-icon">
+            <i class="fa-solid fa-fire"></i>
+            <h5>Total Countries</h5>
+            <h2>846</h2>
+         </div>
+         <div class="counter-icon">
+            <i class="fa-regular fa-newspaper"></i>
+            <h5>Total Courses</h5>
+            <h2>7253</h2>
+         </div>
+         </div>
+      </div>
+      <!--location-->
+      <div class="section-two" style="background-color: white;">
+         <div class="section-title center-block text-center">
+            <h2>Best Rated Location </h2>
+            <span class="sectiontitle-design">
+               <HR size="4" width="90px" align="center" color="black"  style="margin-left: auto;
+                  margin-right: auto; margin-top: 20px;" >
+               <span class="icons"></span>
+            </span>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="main-location">
+            <div class="location-width-6-left">
+               <div class="one-location">
+                  <div class="img-location-main">
+                     <div class="over-main">
+                        <img src="images/1 (2).jpg" alt="">
+                     </div>
+                     <div class="over-effect"></div>
+                     <div class="item-tagss">
+                        <div class="bg-primary tag-option">
+                           <i class="fa-solid fa-heart"></i> 689 
+                        </div>
+                     </div>
+                     <div class="overlay-location">
+                        <div class="item-card-texts">
+                           <h4 class="location">44,327</h4>
+                           <span><i class="fa fa-map-marker text-primary me-1"></i>GARMANY</span> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="img-location-main">
+                     <div class="over-main">
+                        <img src="images/2.jpg" alt="">
+                     </div>
+                     <div class="over-effect"></div>
+                     <div class="item-tagss">
+                        <div class="bg-primary tag-option">
+                           <i class="fa-solid fa-heart"></i> 729 
+                        </div>
+                     </div>
+                     <div class="overlay-location">
+                        <div class="item-card-texts">
+                           <h4 class="location">63,263</h4>
+                           <span><i class="fa fa-map-marker text-primary me-1"></i>AUSTERLIA</span> 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="two-location">
+                  <div class="img-location-main">
+                     <div class="over-main">
+                        <img src="images/3.jpg" alt="">
+                     </div>
+                     <div class="over-effect"></div>
+                     <div class="item-tagss">
+                        <div class="bg-primary tag-option">
+                           <i class="fa-solid fa-heart"></i> 491 
+                        </div>
+                     </div>
+                     <div class="overlay-location">
+                        <div class="item-card-texts">
+                           <h4 class="location">52,145</h4>
+                           <span><i class="fa fa-map-marker text-primary me-1"></i>LONDON</span> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="img-location-main">
+                     <div class="over-main">
+                        <img src="images/6.jpg" alt="">
+                     </div>
+                     <div class="over-effect"></div>
+                     <div class="item-tagss">
+                        <div class="bg-primary tag-option">
+                           <i class="fa-solid fa-heart"></i> 209 
+                        </div>
+                     </div>
+                     <div class="overlay-location">
+                        <div class="item-card-texts">
+                           <h4 class="location">64,825</h4>
+                           <span><i class="fa fa-map-marker text-primary me-1"></i>CANADA</span> 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="location-width-6-right">
+               <div class="img-location">
+                  <div class="img-over">
+                     <img src="images/7.jpg" alt="">
+                  </div>
+                  <div class="over"></div>
+                  <div class="item-tags">
+                     <div class="bg-primary tag-option">
+                        <i class="fa-solid fa-heart"></i> 567
+                     </div>
+                  </div>
+                  <div class="overlay-location">
+                     <div class="item-card-text">
+                        <h4 class="location">36,485</h4>
+                        <span><i class="fa fa-map-marker text-primary me-1"></i>CHICAGO</span> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--client-logo-slider-->
+      <!--location-->
+      <div class="section-two">
+         <div class="section-title center-block text-center">
+            <h2>Best Rated Location </h2>
+            <span class="sectiontitle-design">
+               <HR size="4" width="90px" align="center" class="#6c6161"  style="margin-left: auto;
+                  margin-right: auto; margin-top: 20px; color: #000;" >
+               <span class="icons"></span>
+            </span>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="container-logo">
+            <section class="customer-logos slider">
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181250.825.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181244.568.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181250.825.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181246.407.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181249.637.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181249.040.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181248.011.png">
+               </div>
+               <div class="slide">
+                  <img src="images/Bilalex1 - 2023-06-19T181245.443.png">
+               </div>
+            </section>
+         </div>
+      </div>
+      <!--testimonies-slider-->
+      <div class="section-testionies">
+         <div class="section-title center-block text-center">
+            <h2 style="color: white;">Best Trainers </h2>
+            <span class="sectiontitle-designs">
+               <HR size="4" width="90px" align="center" class="#6c6161"  style="margin-left: auto;
+                  margin-right: auto; margin-top: 20px; color: #000;" >
+               <span class="iconss"></span>
+            </span>
+            <p style="color: white;" class="testi-para">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="slideshow-container">
+            <div class="mySlides">
+               <div class="main-images-container" style="display: flex;">
+                  <img src="images/Bilalex1 (45).jpg" alt="" id="border">
+                  <div class="triangle-down"></div>
+                  <img src="images/Bilalex1 (46).jpg" alt="">
+                  <img src="images/Bilalex1 (47).jpg" alt="">
+               </div>
+               <p class="designation">Elizabeth</p>
+               <span class="demo10">Web Developer</span>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+               <blockquote class="text">
+                  <p> <i class="fa-solid fa-quote-left" ></i>  Sed ut perspiciatis unde omnis iste 
+                     natus error sit voluptatem accusantium doloremque 
+                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                     architecto 
+                     beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                     aspernatur aut 
+                     odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+                     sequi 
+                     nesciunt. 
+                  </p>
+               </blockquote>
+               <div class="btn-testimonies">
+                  <a href="#">View all Testimonial</a>
+               </div>
+            </div>
+            <!-- .mySlides -->
+            <div class="mySlides">
+               <div class="main-images-container" style="display: flex;">
+                  <img src="images/Bilalex1 (45).jpg" alt=""id="demo1">
+                  <img src="images/Bilalex1 (46).jpg" alt="" id="border1">
+                  <div class="triangle-down"></div>
+                  <img src="images/Bilalex1 (47).jpg" alt="">
+               </div>
+               <p class="designation">williamson</p>
+               <span class="demo10">Web Developer</span>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+               <blockquote class="text">
+                  <p> <i class="fa-solid fa-quote-left" ></i>  Sed ut perspiciatis unde omnis iste 
+                     natus error sit voluptatem accusantium doloremque 
+                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+                     beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                     aspernatur aut 
+                     odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
+                     sequi nesciunt. 
+                  </p>
+               </blockquote>
+               <div class="btn-testimonies">
+                  <a href="#">View all Testimonial</a>
+               </div>
+            </div>
+            <!-- .mySlides -->
+            <div class="mySlides">
+               <div class="main-images-container" style="display: flex;">
+                  <img src="images/Bilalex1 (45).jpg" alt=""id="demo1">
+                  <img src="images/Bilalex1 (46).jpg" alt="" id="demo2">
+                  <img src="images/Bilalex1 (47).jpg" alt=""id="border2">
+                  <div class="triangle-down"></div>
+               </div>
+               <p class="designation">Sophie Carr</p>
+               <span class="demo10">Web Developer</span>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-solid fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+               <i class="fa-regular fa-star"></i>
+               <blockquote class="text">
+                  <p> <i class="fa-solid fa-quote-left" ></i>  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                     laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi 
+                     architecto 
+                     beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
+                     aspernatur aut 
+                     odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi 
+                     nesciunt. 
+                  </p>
+               </blockquote>
+               <div class="btn-testimonies">
+                  <a href="#">View all Testimonial</a>
+               </div>
+            </div>
+            <!-- .mySlides -->
+            <a class="prev" onclick="plusSlides(-1) " id="previes-btn">❮</a>
+            <a class="next" onclick="plusSlides(1) "id="next-btn">❯</a>
+         </div>
+      </div>
+      <!--Last-slider card-->
+      <div class="section-two" style="background-color:white; padding-bottom: 40px;">
+         <div class="section-title center-block text-center">
+            <h2>News</h2>
+            <span class="sectiontitle-design">
+               <HR size="4" width="90px" align="center" color="black"  style="margin-left: auto;
+                  margin-right: auto; margin-top: 20px;" >
+               <span class="icons"></span>
+            </span>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="fouth-card-slider">
+            <div class="card-slider-responsive-one">
+               <div class="card-slider-res-image">
+                  <img src="images/Bilalex1 (56).jpg" alt="">
+               </div>
+               <div class="calander-text">
+                  <span><i class="fa-regular fa-calendar-days"></i> <span>Aug-03-2023</span> </span>
+                  <span id="comments"><i class="fa-solid fa-comment"></i> <span>50 Comments</span> </
+                  span>
+               </div>
+               <div class="title">
+                  <h3>Most Developerment Teams</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                     aliquip commodo consequat 
+                  </p>
+               </div>
+               <div class="image-border-slider">
+                  <div class="slider-container">
+                     <img src="images/Bilalex1 (58).jpg" alt="">
+                  </div>
+                  <div class="header-slider">
+                     <h3>Rosita Chatmon</h3>
+                     <p>10 days ago</p>
+                  </div>
+                  <div class="dil-fealing">
+                     <i class="fa-regular fa-heart"></i>
+                     <i class="fa-regular fa-thumbs-up"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="card-slider-responsive-one">
+               <div class="card-slider-res-image">
+                  <img src="images/Bilalex1 (57).jpg" alt="">
+               </div>
+               <div class="calander-text">
+                  <span><i class="fa-regular fa-calendar-days"></i> <span>Nov-03-2023</span> </span>
+                  <span id="comments"><i class="fa-solid fa-comment"></i> <span>5 Comments</span> </span>
+               </div>
+               <div class="title">
+                  <h3>Nemo ipsam voluptatem</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                     aliquip commodo consequat 
+                  </p>
+               </div>
+               <div class="image-border-slider">
+                  <div class="slider-container">
+                     <img src="images/Bilalex1 (61).jpg" alt="">
+                  </div>
+                  <div class="header-slider">
+                     <h3>Sana Developer</h3>
+                     <p>5 days ago</p>
+                  </div>
+                  <div class="dil-fealing">
+                     <i class="fa-regular fa-heart"></i>
+                     <i class="fa-regular fa-thumbs-up"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="card-slider-responsive-one">
+               <div class="card-slider-res-image">
+                  <img src="images/Bilalex1 (56).jpg" alt="">
+               </div>
+               <div class="calander-text">
+                  <span><i class="fa-regular fa-calendar-days"></i> <span>Dec-03-2023</span> </span>
+                  <span id="comments"><i class="fa-solid fa-comment"></i> <span>3 Comments</span> </
+                  span>
+               </div>
+               <div class="title">
+                  <h3>Search Engine Optimization</h3>
+                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                     aliquip commodo consequat 
+                  </p>
+               </div>
+               <div class="image-border-slider">
+                  <div class="slider-container">
+                     <img src="images/Bilalex1 (60).jpg" alt="">
+                  </div>
+                  <div class="header-slider">
+                     <h3>Loyad Nolf</h3>
+                     <p>15 days ago</p>
+                  </div>
+                  <div class="dil-fealing">
+                     <i class="fa-regular fa-heart"></i>
+                     <i class="fa-regular fa-thumbs-up"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--download-->
+      <div class="section-two" style="padding-bottom: 40px;">
+         <div class="section-title center-block text-center">
+            <h2>Download</h2>
+            <span class="sectiontitle-design">
+               <HR size="4" width="90px" align="center" color="black"  style="margin-left: auto;
+                  margin-right: auto; margin-top: 20px;" >
+               <span class="icons"></span>
+            </span>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+         </div>
+         <div class="download-list">
+            <div class="seplate-slider-down">
+               <div class="download-btn1">
+                  <a href="#">
+                  <i class="fa-brands fa-apple"></i>  <span>App Store</span>
+                  </a>
+               </div>
+               <div class="download-btn2">
+                  <a href="#">
+                  <i class="fa-sharp fa-solid fa-head-side-goggles"></i>  <span>Google Play</span>  
+                  </a>
+               </div>
+            </div>
+            <div class="download-btn3">
+               <a href="#">
+               <i class="fa-brands fa-windows"></i>  <span>windows</span>  
+               </a>
+            </div>
+         </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+         <div class="footer-container">
+            <div class="footer-content1">
+               <h4>About</h4>
+               <div class="footer-line"></div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate essequasi, veritatis totam voluptas nostrum.Lorem ipsum dolor sit amet, consectetur </p>
+               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum .</p>
+            </div>
+            <div class="footer-content2">
+               <h4>Services</h4>
+               <div class="footer-line" style="margin-left: 3rem;"></div>
+               <ul class="footer-slider">
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Terms and Services </a></li>
+               </ul>
+            </div>
+            <div class="footer-content3">
+               <h4>Contact</h4>
+               <div class="footer-line"></div>
+               <span></span>
+               <a href="#"> <i class="fa-solid fa-house"></i>   <span> New York, NY 10012, US</span></a>
+               <a href="#"><i class="fa-solid fa-envelope"></i><span> info12323@example.com</span></a>
+               <a href="#"><i class="fa-solid fa-phone"></i> <span> + 01 234 567 89</span></a>
+               <a href="#"><i class="fa-solid fa-print"></i> <span> + 04 234 567 89</span></a>
+               <div class="social-footer">
+                  <i class="fa-brands fa-facebook-f" id="footer-icon"></i>
+                  <i class="fa-brands fa-square-instagram"  id="footer-icon1"></i>
+                  <i class="fa-brands fa-square-twitter" id="footer-icon2"></i>
+                  <i class="fa-brands fa-google" id="footer-icon3"></i>
+               </div>
+            </div>
+            <div class="footer-content4">
+               <h4>Subscribe</h4>
+               <div class="footer-line"></div>
+               <!-- The form -->
+               <form class="example" action="action_page.php">
+                  <input type="text" placeholder="Email" name="search">
+                  <button type="submit">Subscribe</button>
+               </form>
+               <h4 style="padding-top: 20px;">Payments</h4>
+               <div class="footer-line"></div>
+               <div class="paypal-footer">
+                  <i class="fa-brands fa-cc-amazon-pay"></i>
+                  <i class="fa-brands fa-cc-paypal"></i>
+                  <i class="fa-solid fa-money-check"></i>
+                  <i class="fa-solid fa-credit-card"></i>
+                  <i class="fa-regular fa-credit-card"></i>
+               </div>
+            </div>
+         </div>
+         <div class="footer-sm-footer">
+            Copyright © 2022 
+            <a href="#" class="sm-footer">Eudica</a>. Offlineed by 
+            <a href="#" class="sm-footer"> Spruko Technologies Pvt.Ltd </a>All rights reserved. 
+         </div>
+      </div>
+      <!--hover-->
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/script.js"></script>  
+      <script>
+         const wrapper = document.querySelector(".wrapper");
+         const carousel = document.querySelector(".carousel");
+         const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+         const arrowBtns = document.querySelectorAll(".wrapper i");
+         const carouselChildrens = [...carousel.children];
+         
+         let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+         
+         // Get the number of cards that can fit in the carousel at once
+         let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+         
+         // Insert copies of the last few cards to beginning of carousel for infinite scrolling
+         carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+             carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+         });
+         
+         // Insert copies of the first few cards to end of carousel for infinite scrolling
+         carouselChildrens.slice(0, cardPerView).forEach(card => {
+             carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+         });
+         
+         // Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+         carousel.classList.add("no-transition");
+         carousel.scrollLeft = carousel.offsetWidth;
+         carousel.classList.remove("no-transition");
+         
+         // Add event listeners for the arrow buttons to scroll the carousel left and right
+         arrowBtns.forEach(btn => {
+             btn.addEventListener("click", () => {
+                 carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+             });
+         });
+         
+         const dragStart = (e) => {
+             isDragging = true;
+             carousel.classList.add("dragging");
+             // Records the initial cursor and scroll position of the carousel
+             startX = e.pageX;
+             startScrollLeft = carousel.scrollLeft;
+         }
+         
+         const dragging = (e) => {
+             if(!isDragging) return; // if isDragging is false return from here
+             // Updates the scroll position of the carousel based on the cursor movement
+             carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+         }
+         
+         const dragStop = () => {
+             isDragging = false;
+             carousel.classList.remove("dragging");
+         }
+         
+         const infiniteScroll = () => {
+             // If the carousel is at the beginning, scroll to the end
+             if(carousel.scrollLeft === 0) {
+                 carousel.classList.add("no-transition");
+                 carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+                 carousel.classList.remove("no-transition");
+             }
+             // If the carousel is at the end, scroll to the beginning
+            else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth){ 
+                 carousel.classList.add("no-transition");
+                 carousel.scrollLeft = carousel.offsetWidth;
+                 carousel.classList.remove("no-transition");
+             }
+         
+             // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+             clearTimeout(timeoutId);
+             if(!wrapper.matches(":hover")) autoPlay();
+         }
+         
+         const autoPlay = () => {
+             if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 8
+         
+             // Autoplay the carousel after every 2500 ms
+             timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+         }
+         autoPlay();
+         
+         carousel.addEventListener("mousedown", dragStart);
+         carousel.addEventListener("mousemove", dragging);
+         document.addEventListener("mouseup", dragStop);
+         carousel.addEventListener("scroll", infiniteScroll);
+         wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+         wrapper.addEventListener("mouseleave",autoPlay );
+      </script>
+      <script>
+         $(document).ready(function(){
+          $('.customer-logos').slick({
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows: false,
+              dots: false,
+              pauseOnHover: false,
+              responsive: [{
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 4
+                  }
+              }, {
+                  breakpoint: 520,
+                  settings: {
+                      slidesToShow: 3
+                  }
+              }]
+          });
+         });
+      </script>
+      <script>
+         let slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+         showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+         showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+         let i;
+         let slides = document.getElementsByClassName("mySlides");
+         let dots = document.getElementsByClassName("dot");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+         }
+         for (i = 0; i < dots.length; i++) {
+         dots[i].className = dots[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         dots[slideIndex-1].className += " active";
+         }
+      </script>
+   </body>
+</html>
